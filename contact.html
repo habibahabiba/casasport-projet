@@ -24,15 +24,19 @@
     </header>
     <section class="contact" id="contact">
         <div class="contactform">
+            <form id="form" action="/">
             <h2>Envoyer un message</h2>
             <div class="inputboite">
-                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom" required>
+                <div class="error"></div>
             </div>
             <div class="inputboite">
                 <input type="text" placeholder="Email">
+                <div class="error"></div>
             </div>
             <div class="inputboite">
                 <textarea placeholder="message"></textarea>
+                <div class="error"></div>
             </div>
             <div class="inputboite">
                 <input type="submit" value="envoyer">
