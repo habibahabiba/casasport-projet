@@ -45,7 +45,6 @@ function ready(){
     document
         .getElementsByClassName('btn-buy')[0]
         .addEventListener('click',buyButtonClicked);
-
 }
 function buyButtonClicked(event){
     alert('Your Order is placed');
@@ -54,9 +53,7 @@ function buyButtonClicked(event){
         cartContent.removeChild(cartContent.firstChild);
     }
     updatetotal();
-
 }
-
 
 function removeCartItem(event){
     var buttonClicked = event.target;
@@ -133,7 +130,7 @@ function updatetotal(){
     }
         total = Math.round(total * 100) / 100;
         document.getElementsByClassName('total-price')[0].innerText = '$' + total;
-   
+    
 
 }
 const form = document.getElementById('form');
@@ -143,8 +140,8 @@ const fmessage = document.getElementById('message');
 
 form.addEventListener('Envoyer', e => {
     e.preventDefault();
-
 });
+
 const setError = (element,message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -185,4 +182,4 @@ const validateInputs = () => {
     } 
     
 
-};
+}
